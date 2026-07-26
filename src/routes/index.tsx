@@ -179,15 +179,33 @@ function HeroSection() {
 }
 
 function AboutSection() {
+  const highlights = [
+    {
+      icon: <Terminal className="h-5 w-5" />,
+      title: "Software Engineer",
+      text: "Merancang dan membangun aplikasi web serta mobile end-to-end — dari desain API, arsitektur layanan, sampai antarmuka yang rapi dan cepat.",
+    },
+    {
+      icon: <Brain className="h-5 w-5" />,
+      title: "AI Engineer",
+      text: "Membawa model machine learning ke produksi: chatbot, NLP, dan computer vision yang benar-benar dipakai pengguna, bukan berhenti di notebook.",
+    },
+    {
+      icon: <BarChart3 className="h-5 w-5" />,
+      title: "Data Analyst",
+      text: "Mengolah data mentah menjadi cerita: eksplorasi, visualisasi, dan dashboard yang membantu keputusan diambil dengan dasar yang jelas.",
+    },
+  ];
+
   return (
     <section id="about" className="scroll-mt-24 px-6 py-24">
       <div className="mx-auto max-w-5xl">
-        <div className="grid items-center gap-12 md:grid-cols-[1fr_1.5fr]">
-          <div className="relative mx-auto w-48 md:mx-0 md:w-64">
+        <div className="grid items-center gap-12 md:grid-cols-[auto_1fr]">
+          <div className="relative mx-auto w-48 shrink-0 md:mx-0 md:w-64">
             <div className="aspect-square overflow-hidden rounded-2xl border border-border bg-card shadow-2xl glow">
               <img
                 src="https://avatars.githubusercontent.com/u/130417258?v=4"
-                alt="Ervan GitHub avatar"
+                alt="Foto profil Ervan"
                 className="h-full w-full object-cover"
                 width={256}
                 height={256}
@@ -204,28 +222,55 @@ function AboutSection() {
               Tentang Saya
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Saya adalah engineer yang suka menyelesaikan masalah nyata dengan teknologi.
-              Dari membangun aplikasi full-stack, mengembangkan model machine learning,
-              hingga menyelami data untuk menemukan pola yang berharga — saya menikmati
-              seluruh spektrum pembangunan produk digital.
+              Saya Ervan — seorang engineer yang tumbuh dari rasa penasaran: bagaimana
+              sebuah ide bisa berubah menjadi produk yang dipakai orang. Perjalanan saya
+              dimulai secara otodidak, lewat proyek-proyek kecil yang perlahan berkembang
+              menjadi aplikasi full-stack, sistem AI, dan pekerjaan analisis data.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              Saat ini saya aktif bereksperimen dengan berbagai stack: TypeScript, Go,
-              Python, dan Dart. Saya percaya kombinasi ketiga bidang ini — software
-              engineering, AI, dan data analytics — adalah fondasi produk teknologi masa
-              depan.
+              Hari ini saya bekerja di persimpangan tiga bidang: software engineering,
+              AI engineering, dan data analytics. Kombinasi itu membuat saya bisa
+              menemani sebuah produk dari hulu ke hilir — merancang sistemnya,
+              menanamkan kecerdasan di dalamnya, lalu membaca datanya untuk tahu
+              apa yang perlu diperbaiki berikutnya.
             </p>
+
             <div className="mt-8 flex flex-wrap gap-3">
+              <a href="/cv-ervan.pdf" download>
+                <Button className="gap-2 font-medium">
+                  <Download className="h-4 w-4" />
+                  Unduh CV
+                </Button>
+              </a>
               <SocialLink href="https://github.com/ervndty" icon={<Github className="h-4 w-4" />} label="GitHub" />
               <SocialLink href="#" icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" />
               <SocialLink href="mailto:ervan@example.com" icon={<Mail className="h-4 w-4" />} label="Email" />
             </div>
           </div>
         </div>
+
+        <div className="mt-16 grid gap-5 sm:grid-cols-3">
+          {highlights.map((item) => (
+            <Card key={item.title} className="border-border bg-card/50 backdrop-blur">
+              <CardContent className="p-6">
+                <div className="inline-flex items-center justify-center rounded-lg bg-primary/10 p-2.5 text-primary">
+                  {item.icon}
+                </div>
+                <h3 className="mt-4 font-display text-lg font-semibold text-foreground">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {item.text}
+                </p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   );
 }
+
 
 function SkillsSection() {
   const skills = [
