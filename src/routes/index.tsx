@@ -15,9 +15,7 @@ import {
   Download,
   Terminal,
   Database,
-  Cpu,
   Layers,
-  Globe,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -280,23 +278,51 @@ function SkillsSection() {
       title: "Software Engineering",
       description:
         "Membangun aplikasi dan layanan dengan arsitektur yang bersih, scalable, dan mudah dirawat.",
-      tags: ["TypeScript", "Go", "JavaScript", "PHP", "Dart", "React", "Node.js", "Microservices"],
+      tags: [
+        "React",
+        "NestJS",
+        "Node.js",
+        "Go",
+        "Laravel",
+        "FastAPI",
+        "PostgreSQL",
+        "Docker",
+      ],
     },
     {
       icon: <Brain className="h-6 w-6" />,
       title: "AI Engineering",
       description:
-        "Mengintegrasikan model machine learning, chatbot, dan computer vision ke dalam produk nyata.",
-      tags: ["Python", "TensorFlow", "NLP", "Chatbot", "Computer Vision", "FastAPI"],
+        "Mengintegrasikan model machine learning, NLP, dan computer vision ke dalam produk nyata.",
+      tags: [
+        "TensorFlow",
+        "Keras",
+        "scikit-learn",
+        "Context & Intent",
+        "NLP",
+        "Computer Vision",
+        "Machine Learning",
+        "Deep Learning",
+      ],
     },
     {
       icon: <BarChart3 className="h-6 w-6" />,
       title: "Data Analysis",
       description:
         "Mengolah, mengeksplorasi, dan memvisualisasikan data untuk menghasilkan keputusan berbasis data.",
-      tags: ["Pandas", "Jupyter", "EDA", "Visualization", "Dashboard", "SQL"],
+      tags: [
+        "Pandas",
+        "NumPy",
+        "Jupyter",
+        "EDA",
+        "Feature Extraction",
+        "Visualization",
+        "Dashboard",
+        "SQL",
+      ],
     },
   ];
+
 
   return (
     <section id="skills" className="scroll-mt-24 bg-hero px-6 py-24">
@@ -445,28 +471,40 @@ function RepoCard({ repo }: { repo: Awaited<ReturnType<typeof getGithubRepos>>[n
 function ExperienceSection() {
   const experiences = [
     {
-      period: "2023 — Sekarang",
-      role: "Software Engineer, AI Engineer & Data Analyst",
-      company: "Independent / Freelance",
+      period: "Mei 2026 — Sekarang",
+      role: "Quality Control (QC1 → QC2)",
+      company: "PT. Morrigan Services · Freelance · Tegalrejo, Yogyakarta",
       description:
-        "Membangun berbagai produk digital, mulai dari aplikasi web, mobile, chatbot AI, dashboard data, hingga microservices.",
-      icon: <Globe className="h-5 w-5" />,
+        "Menjaga kualitas dan integritas data field audit (mystery shopping) untuk klien retail dan perbankan, memastikan setiap laporan akurat, objektif, dan siap dikirim ke klien. Mulai sebagai QC1 untuk validasi laporan, lalu dipromosikan menjadi QC2 untuk verifikasi lapis kedua atas hasil kerja tim QC1.",
+      points: [
+        "Memvalidasi jawaban kuesioner terhadap kriteria penilaian klien (compliant / non-compliant / not applicable) pada setiap poin observasi.",
+        "Cross-check temuan tertulis dengan bukti pendukung (dokumentasi foto dan rekaman audio) untuk memastikan validitas data.",
+        "Memverifikasi perhitungan durasi layanan dari rekaman audit sebagai dasar penilaian standar service time.",
+        "Menyunting dan merapikan deskripsi temuan agar sesuai kondisi nyata serta standar penulisan pelaporan klien.",
+        "Menjaga anonimitas auditor di seluruh dokumentasi laporan.",
+        "Sebagai QC2: verifikasi lapis kedua output tim QC1, menjaga konsistensi scoring antar auditor, dan memberi feedback korektif terstruktur.",
+      ],
+      projects: ["Eiger (Retail) — QC1 & QC2", "Bank Mandiri (Perbankan) — QC1"],
+      tags: ["Data Quality", "Audit", "Reporting", "Attention to Detail"],
+      icon: <Layers className="h-5 w-5" />,
     },
     {
-      period: "2023 — 2024",
-      role: "Project Contributor",
-      company: "Open Source & Academic",
+      period: "Nov 2025 — Feb 2026",
+      role: "Backend Developer",
+      company: "PT Sukses Kerja Mendunia · Apprentice · Caturtunggal, Sleman",
       description:
-        "Mengerjakan proyek analisis data, machine learning, dan pengembangan full-stack untuk portofolio dan tugas akhir.",
+        "Merancang dan membangun HRIS multi-tenant menggunakan NestJS dengan pendekatan Modular Architecture, memastikan isolasi data dan skalabilitas untuk banyak perusahaan.",
+      points: [
+        "Mengarsitekturi dan mengembangkan HRIS multi-tenant dengan NestJS dan Modular Architecture untuk pemisahan logika bisnis antar perusahaan.",
+        "Mengimplementasikan Role-Based Access Control (RBAC) untuk mengatur hak akses tiap peran pengguna di setiap tenant.",
+        "Membangun sistem absensi berbasis foto dan GPS yang mampu membedakan check-in remote dan on-site (WFO).",
+        "Mengoptimalkan skema database PostgreSQL dengan Prisma ORM untuk fitur absensi, manajemen shift, dan payroll yang terintegrasi.",
+        "Menerapkan mekanisme isolasi data tenant demi keamanan dan integritas data sensitif tiap perusahaan.",
+        "Melakukan containerization aplikasi dengan Docker untuk menstandarkan environment development tim.",
+      ],
+      projects: [],
+      tags: ["NestJS", "PostgreSQL", "Prisma", "RBAC", "Docker", "Multi-tenant"],
       icon: <Database className="h-5 w-5" />,
-    },
-    {
-      period: "2022 — 2023",
-      role: "Learning & Exploration",
-      company: "Self-taught",
-      description:
-        "Mempelajari fundamental software engineering, AI/ML, dan data analytics melalui proyek hands-on.",
-      icon: <Cpu className="h-5 w-5" />,
     },
   ];
 
@@ -478,7 +516,8 @@ function ExperienceSection() {
             Perjalanan Karir
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Ringkasan perjalanan profesional dan proyek yang telah saya kerjakan.
+            Riwayat kerja dan proyek penting yang telah saya kerjakan, disusun
+            secara kronologis.
           </p>
         </div>
 
@@ -487,26 +526,70 @@ function ExperienceSection() {
           <div className="space-y-10">
             {experiences.map((exp) => (
               <div key={exp.period} className="relative md:pl-20">
-                <div className="absolute left-0 top-1 hidden h-4 w-4 rounded-full border-2 border-primary bg-background md:block" />
-                <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                      {exp.icon}
+                <div className="absolute left-[26px] top-3 hidden h-4 w-4 rounded-full border-2 border-primary bg-background md:block" />
+                <Card className="border-border bg-card/60 backdrop-blur">
+                  <CardContent className="p-6">
+                    <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                          {exp.icon}
+                        </div>
+                        <div>
+                          <h3 className="font-display text-lg font-semibold text-foreground">
+                            {exp.role}
+                          </h3>
+                          <p className="text-sm text-muted-foreground">{exp.company}</p>
+                        </div>
+                      </div>
+                      <Badge variant="outline" className="w-fit border-border/60">
+                        {exp.period}
+                      </Badge>
                     </div>
-                    <div>
-                      <h3 className="font-display text-lg font-semibold text-foreground">
-                        {exp.role}
-                      </h3>
-                      <p className="text-sm text-muted-foreground">{exp.company}</p>
+
+                    <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                      {exp.description}
+                    </p>
+
+                    <ul className="mt-4 space-y-2">
+                      {exp.points.map((point) => (
+                        <li
+                          key={point}
+                          className="flex gap-2 text-sm leading-relaxed text-muted-foreground"
+                        >
+                          <span className="mt-2 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    {exp.projects.length > 0 && (
+                      <div className="mt-5">
+                        <h4 className="font-display text-sm font-semibold text-foreground">
+                          Proyek
+                        </h4>
+                        <ul className="mt-2 space-y-1">
+                          {exp.projects.map((project) => (
+                            <li key={project} className="text-sm text-muted-foreground">
+                              {project}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {exp.tags.map((tag) => (
+                        <Badge
+                          key={tag}
+                          variant="outline"
+                          className="border-border/60 bg-background/60 text-xs text-muted-foreground"
+                        >
+                          {tag}
+                        </Badge>
+                      ))}
                     </div>
-                  </div>
-                  <Badge variant="outline" className="mt-2 w-fit border-border/60 md:mt-0">
-                    {exp.period}
-                  </Badge>
-                </div>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:ml-13">
-                  {exp.description}
-                </p>
+                  </CardContent>
+                </Card>
               </div>
             ))}
           </div>
@@ -515,6 +598,7 @@ function ExperienceSection() {
     </section>
   );
 }
+
 
 function ContactSection() {
   return (
