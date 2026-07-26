@@ -235,7 +235,7 @@ function AboutSection() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="/cv-ervin-aditya.pdf" download>
+              <a href="/Ervin Aditya -resume.pdf" download>
                 <Button className="gap-2 font-medium">
                   <Download className="h-4 w-4" />
                   Unduh CV
