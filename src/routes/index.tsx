@@ -15,9 +15,7 @@ import {
   Download,
   Terminal,
   Database,
-  Cpu,
   Layers,
-  Globe,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
