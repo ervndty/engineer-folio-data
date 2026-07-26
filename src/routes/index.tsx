@@ -12,6 +12,7 @@ import {
   Brain,
   BarChart3,
   ArrowDown,
+  Download,
   Terminal,
   Database,
   Cpu,
