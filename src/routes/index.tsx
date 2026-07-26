@@ -35,21 +35,21 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Ervan — Software Engineer, AI Engineer & Data Analyst",
+        title: "Ervin Aditya — Software Engineer, AI Engineer & Data Analyst",
       },
       {
         name: "description",
         content:
-          "Portofolio Ervan: software engineer, AI engineer, dan data analyst. Lihat proyek-proyek terbaru dari GitHub.",
+          "Portofolio Ervin Aditya: software engineer, AI engineer, dan data analyst. Lihat proyek-proyek terbaru dari GitHub.",
       },
       {
         property: "og:title",
-        content: "Ervan — Software Engineer, AI Engineer & Data Analyst",
+        content: "Ervin Aditya — Software Engineer, AI Engineer & Data Analyst",
       },
       {
         property: "og:description",
         content:
-          "Portofolio Ervan: software engineer, AI engineer, dan data analyst. Lihat proyek-proyek terbaru dari GitHub.",
+          "Portofolio Ervin Aditya: software engineer, AI engineer, dan data analyst. Lihat proyek-proyek terbaru dari GitHub.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -144,7 +144,7 @@ function HeroSection() {
           Software Engineer · AI Engineer · Data Analyst
         </Badge>
         <h1 className="font-display text-5xl font-extrabold tracking-tight text-foreground sm:text-6xl md:text-7xl">
-          Halo, saya <span className="text-gradient">Ervan</span>
+          Halo, saya <span className="text-gradient">Ervin Aditya</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
           Membangun sistem perangkat lunak yang scalable, mengembangkan solusi AI
@@ -204,7 +204,7 @@ function AboutSection() {
             <div className="aspect-square overflow-hidden rounded-2xl border border-border bg-card shadow-2xl glow">
               <img
                 src="https://avatars.githubusercontent.com/u/130417258?v=4"
-                alt="Foto profil Ervan"
+                alt="Foto profil Ervin Aditya"
                 className="h-full w-full object-cover"
                 width={256}
                 height={256}
@@ -221,7 +221,7 @@ function AboutSection() {
               Tentang Saya
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Saya Ervan — seorang engineer yang tumbuh dari rasa penasaran: bagaimana
+              Saya Ervin Aditya — seorang engineer yang tumbuh dari rasa penasaran: bagaimana
               sebuah ide bisa berubah menjadi produk yang dipakai orang. Perjalanan saya
               dimulai secara otodidak, lewat proyek-proyek kecil yang perlahan berkembang
               menjadi aplikasi full-stack, sistem AI, dan pekerjaan analisis data.
@@ -235,7 +235,7 @@ function AboutSection() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="/cv-ervan.pdf" download>
+              <a href="/cv-ervin-aditya.pdf" download>
                 <Button className="gap-2 font-medium">
                   <Download className="h-4 w-4" />
                   Unduh CV
@@ -243,7 +243,7 @@ function AboutSection() {
               </a>
               <SocialLink href="https://github.com/ervndty" icon={<Github className="h-4 w-4" />} label="GitHub" />
               <SocialLink href="#" icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" />
-              <SocialLink href="mailto:ervan@example.com" icon={<Mail className="h-4 w-4" />} label="Email" />
+              <SocialLink href="mailto:ervin@example.com" icon={<Mail className="h-4 w-4" />} label="Email" />
             </div>
           </div>
         </div>
@@ -475,7 +475,7 @@ function ExperienceSection() {
       role: "Quality Control (QC1 → QC2)",
       company: "PT. Morrigan Services · Freelance · Tegalrejo, Yogyakarta",
       description:
-        "Menjaga kualitas dan integritas data field audit (mystery shopping) untuk klien retail dan perbankan, memastikan setiap laporan akurat, objektif, dan siap dikirim ke klien. Mulai sebagai QC1 untuk validasi laporan, lalu dipromosikan menjadi QC2 untuk verifikasi lapis kedua atas hasil kerja tim QC1.",
+        "Menjaga kualitas dan integritas data field audit (mystery shopping) untuk klien retail dan perbankan, memastikan setiap laporan akurat, objektif, dan siap dikirim ke klien. Mulai sebagai QC1 [...]
       points: [
         "Memvalidasi jawaban kuesioner terhadap kriteria penilaian klien (compliant / non-compliant / not applicable) pada setiap poin observasi.",
         "Cross-check temuan tertulis dengan bukti pendukung (dokumentasi foto dan rekaman audio) untuk memastikan validitas data.",
@@ -612,7 +612,7 @@ function ContactSection() {
           email atau media sosial.
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <a href="mailto:ervan@example.com">
+          <a href="mailto:ervin@example.com">
             <Button size="lg" className="gap-2">
               <Mail className="h-4 w-4" />
               Kirim Email
@@ -645,7 +645,7 @@ function Footer() {
     <footer className="border-t border-border px-6 py-8">
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 sm:flex-row">
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Ervan. Dibangun dengan React, Tailwind, dan GitHub API.
+          © {new Date().getFullYear()} Ervin Aditya. Dibangun dengan React, Tailwind, dan GitHub API.
         </p>
         <div className="flex items-center gap-4">
           <a
@@ -667,7 +667,7 @@ function Footer() {
             <Linkedin className="h-5 w-5" />
           </a>
           <a
-            href="mailto:ervan@example.com"
+            href="mailto:ervin@example.com"
             className="text-muted-foreground transition-colors hover:text-foreground"
             aria-label="Email"
           >
