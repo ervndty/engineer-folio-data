@@ -16,6 +16,7 @@ import {
   Terminal,
   Database,
   Layers,
+  GraduationCap,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -505,6 +506,21 @@ function ExperienceSection() {
       projects: [],
       tags: ["NestJS", "PostgreSQL", "Prisma", "RBAC", "Docker", "Multi-tenant"],
       icon: <Database className="h-5 w-5" />,
+    },
+    {
+      period: "Jan 2023 — Jan 2026",
+      role: "Lab Assistant (Contract)",
+      company: "Universitas Amikom Yogyakarta · Yogyakarta, Indonesia",
+      description:
+        "Mendampingi mahasiswa dalam praktikum pemrograman, backend development, big data, dan e-commerce; membantu mereka memahami konsep teknis serta implementasi kode yang benar.",
+      points: [
+        "Membimbing 50+ mahasiswa per semester dalam praktikum Backend Development (Laravel) dan Pemrograman (C# & .NET Framework).",
+        "Mendampingi mahasiswa dalam praktikum Big Data & Predictive Analytics menggunakan Python, memastikan pemahaman konsep dan implementasi kode yang benar.",
+        "Membantu pengembangan materi praktikum E-Commerce berbasis web menggunakan Laravel 11.",
+      ],
+      projects: [],
+      tags: ["Laravel", "C#", ".NET", "Python", "Big Data", "Teaching"],
+      icon: <GraduationCap className="h-5 w-5" />,
     },
   ];
 
