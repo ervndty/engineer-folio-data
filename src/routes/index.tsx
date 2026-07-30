@@ -513,7 +513,7 @@ function ExperienceSection() {
       points: [
         "Membimbing 50+ mahasiswa per semester dalam praktikum Backend Development (Laravel) dan Pemrograman (C# & .NET Framework).",
         "Mengajar praktikum Big Data & Predictive Analytics dengan Python: exploratory data analysis, pembersihan dan transformasi data, hingga visualisasi untuk membaca pola dalam dataset.",
-        "Membimbing mahasiswa menerjemahkan hasil eksplorasi menjadi interpretasi yang benar — bukan sekadar menjalankan kode, tapi memahami apa yang ditunjukkan datanya.",
+        "Membimbing mahasiswa menerjemahkan hasil eksplorasi menjadi interpretasi yang benar bukan sekadar menjalankan kode, tapi memahami apa yang ditunjukkan datanya.",
         "Membantu pengembangan materi praktikum E-Commerce berbasis web menggunakan Laravel 11.",
       ],
       projects: [],
