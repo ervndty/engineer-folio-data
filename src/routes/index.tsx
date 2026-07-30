@@ -36,7 +36,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Ervin Aditya — Software Engineer, AI Engineer & Data Analyst",
+        title: "Ervin Aditya - Software Engineer, AI Engineer & Data Analyst",
       },
       {
         name: "description",
@@ -45,7 +45,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Ervin Aditya — Software Engineer, AI Engineer & Data Analyst",
+        content: "Ervin Aditya - Software Engineer, AI Engineer & Data Analyst",
       },
       {
         property: "og:description",
