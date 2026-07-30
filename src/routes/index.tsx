@@ -475,7 +475,7 @@ function ExperienceSection() {
       role: "Quality Control (QC1 → QC2)",
       company: "PT. Morrigan Services · Freelance · Tegalrejo, Yogyakarta",
       description:
-        "Menjaga kualitas dan integritas data field audit (mystery shopping) untuk klien retail dan perbankan, memastikan setiap laporan akurat, objektif, dan siap dikirim ke klien. Mulai sebagai QC1 [...]
+        "Menjaga kualitas dan integritas data field audit (mystery shopping) untuk klien retail dan perbankan, memastikan setiap laporan akurat, objektif, dan siap dikirim ke klien. Mulai sebagai QC1, kini dipercaya sebagai QC2 untuk verifikasi lapis kedua.",
       points: [
         "Memvalidasi jawaban kuesioner terhadap kriteria penilaian klien (compliant / non-compliant / not applicable) pada setiap poin observasi.",
         "Cross-check temuan tertulis dengan bukti pendukung (dokumentasi foto dan rekaman audio) untuk memastikan validitas data.",
