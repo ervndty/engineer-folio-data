@@ -25,6 +25,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { getGithubRepos } from "@/lib/github.functions";
 import heroImage from "@/assets/hero-portfolio.jpg";
 import profileAsset from "@/assets/profile.jpg.asset.json";
+import profImage from "@/assets/pp.jpg";
 
 const reposQueryOptions = queryOptions({
   queryKey: ["github-repos", "ervndty"],
@@ -205,7 +206,7 @@ function AboutSection() {
           <div className="relative mx-auto w-48 shrink-0 md:mx-0 md:w-64">
             <div className="aspect-square overflow-hidden rounded-2xl border border-border bg-card shadow-2xl glow">
               <img
-                src={profileAsset.url}
+                src={profImage}
                 alt="Foto profil Ervin Aditya"
                 className="h-full w-full object-cover"
                 width={256}
