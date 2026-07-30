@@ -223,17 +223,13 @@ function AboutSection() {
               Tentang Saya
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Saya Ervin Aditya — seorang engineer yang tumbuh dari rasa penasaran: bagaimana
-              sebuah ide bisa berubah menjadi produk yang dipakai orang. Perjalanan saya
-              dimulai secara otodidak, lewat proyek-proyek kecil yang perlahan berkembang
-              menjadi aplikasi full-stack, sistem AI, dan pekerjaan analisis data.
+              Saya Ervin Aditya, lulusan S1 Informatika Universitas AMIKOM Yogyakarta (IPK 3.69). Fokus saya pada backend engineering dan penerapan AI ke produk nyata: merancang layanan RESTful dengan Go, NestJS, dan FastAPI, serta membangun sistem agentic LLM berbasis RAG hingga tahap deployment.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              Hari ini saya bekerja di persimpangan tiga bidang: software engineering,
-              AI engineering, dan data analytics. Kombinasi itu membuat saya bisa
-              menemani sebuah produk dari hulu ke hilir — merancang sistemnya,
-              menanamkan kecerdasan di dalamnya, lalu membaca datanya untuk tahu
-              apa yang perlu diperbaiki berikutnya.
+              Tiga tahun sebagai asisten laboratorium, mendampingi 50+ mahasiswa per semester. Lulus Bangkit Academy dengan predikat Distinction, dan menerbitkan publikasi sebagai penulis pertama di Jurnal JAIC — klasifikasi penyakit tanaman dengan akurasi 99%.
+            </p>
+            <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+              Saat ini terbuka untuk peran Backend Engineer dan AI Engineer.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
