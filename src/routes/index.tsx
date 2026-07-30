@@ -470,7 +470,7 @@ function RepoCard({ repo }: { repo: Awaited<ReturnType<typeof getGithubRepos>>[n
 function ExperienceSection() {
   const experiences = [
     {
-      period: "Mei 2026 — Sekarang",
+      period: "Mei 2026 - Sekarang",
       role: "Quality Control (QC1 → QC2)",
       company: "PT. Morrigan Services · Freelance · Tegalrejo, Yogyakarta",
       description:
@@ -483,12 +483,12 @@ function ExperienceSection() {
         "Menjaga anonimitas auditor di seluruh dokumentasi laporan.",
         "Sebagai QC2: verifikasi lapis kedua output tim QC1, menjaga konsistensi scoring antar auditor, dan memberi feedback korektif terstruktur.",
       ],
-      projects: ["Eiger (Retail) — QC1 & QC2", "Bank Mandiri (Perbankan) — QC1"],
+      projects: ["Eiger (Retail) - QC1 & QC2", "Bank Mandiri (Perbankan) - QC1"],
       tags: ["Data Quality", "Audit", "Reporting", "Attention to Detail"],
       icon: <Layers className="h-5 w-5" />,
     },
     {
-      period: "Nov 2025 — Feb 2026",
+      period: "Nov 2025 - Feb 2026",
       role: "Backend Developer",
       company: "PT Sukses Kerja Mendunia · Apprentice · Caturtunggal, Sleman",
       description:
@@ -506,7 +506,7 @@ function ExperienceSection() {
       icon: <Database className="h-5 w-5" />,
     },
     {
-      period: "Jan 2023 — Jan 2026",
+      period: "Jan 2023 - Jan 2026",
       role: "Lab Assistant (Contract)",
       company: "Universitas Amikom Yogyakarta · Yogyakarta, Indonesia",
       description:
