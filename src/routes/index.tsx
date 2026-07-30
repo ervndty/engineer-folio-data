@@ -243,8 +243,8 @@ function AboutSection() {
                 </Button>
               </a>
               <SocialLink href="https://github.com/ervndty" icon={<Github className="h-4 w-4" />} label="GitHub" />
-              <SocialLink href="#" icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" />
-              <SocialLink href="mailto:ervin@example.com" icon={<Mail className="h-4 w-4" />} label="Email" />
+              <SocialLink href="https://www.linkedin.com/in/ervin-aditya-101949297" icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" />
+              <SocialLink href="mailto:ervinaditya35@gmail.com" icon={<Mail className="h-4 w-4" />} label="Email" />
             </div>
           </div>
         </div>
@@ -628,7 +628,7 @@ function ContactSection() {
           email atau media sosial.
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <a href="mailto:ervin@example.com">
+          <a href="mailto:ervinaditya35@gmail.com">
             <Button size="lg" className="gap-2">
               <Mail className="h-4 w-4" />
               Kirim Email
@@ -644,7 +644,11 @@ function ContactSection() {
               GitHub
             </Button>
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/ervin-aditya-101949297"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button size="lg" variant="outline" className="gap-2">
               <Linkedin className="h-4 w-4" />
               LinkedIn
@@ -674,7 +678,7 @@ function Footer() {
             <Github className="h-5 w-5" />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/ervin-aditya-101949297"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-foreground"
@@ -683,7 +687,7 @@ function Footer() {
             <Linkedin className="h-5 w-5" />
           </a>
           <a
-            href="mailto:ervin@example.com"
+            href="mailto:ervinaditya35@gmail.com"
             className="text-muted-foreground transition-colors hover:text-foreground"
             aria-label="Email"
           >
