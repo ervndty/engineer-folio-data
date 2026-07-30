@@ -24,6 +24,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { getGithubRepos } from "@/lib/github.functions";
 import heroImage from "@/assets/hero-portfolio.jpg";
+import profileAsset from "@/assets/profile.jpg.asset.json";
 
 const reposQueryOptions = queryOptions({
   queryKey: ["github-repos", "ervndty"],
