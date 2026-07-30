@@ -226,10 +226,10 @@ function AboutSection() {
               Saya Ervin Aditya, lulusan S1 Informatika Universitas AMIKOM Yogyakarta (IPK 3.69). Fokus saya pada backend engineering dan penerapan AI ke produk nyata: merancang layanan RESTful dengan Go, NestJS, dan FastAPI, serta membangun sistem agentic LLM berbasis RAG hingga tahap deployment.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              Tiga tahun sebagai asisten laboratorium, mendampingi 50+ mahasiswa per semester. Lulus Bangkit Academy dengan predikat Distinction, dan menerbitkan publikasi sebagai penulis pertama di Jurnal JAIC — klasifikasi penyakit tanaman dengan akurasi 99%.
+              Tiga tahun sebagai asisten laboratorium, mendampingi 50+ mahasiswa per semester. Lulus Bangkit Academy dengan predikat Distinction, dan menerbitkan publikasi sebagai penulis pertama di Jurnal JAIC - klasifikasi penyakit tanaman dengan akurasi 99%.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              Saat ini terbuka untuk peran Backend Engineer dan AI Engineer.
+              Saat ini terbuka untuk peran Backend Engineer, AI Engineer dan Data Analyst.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
